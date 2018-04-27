@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controler-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewControler" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="QJH-u7-sq1">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="40" width="414" height="696"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XgL-G0-vlY">
                                 <rect key="frame" x="147.66666666666666" y="40" width="118.99999999999997" height="20"/>
@@ -70,7 +70,7 @@
                             <constraint firstItem="kua-XL-4qb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L3b-pS-VGa"/>
                             <constraint firstItem="xfy-Hm-bDl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OlO-MN-B7a"/>
                             <constraint firstItem="kua-XL-4qb" firstAttribute="width" secondItem="0uA-lz-eKt" secondAttribute="width" id="QCc-1A-v0v"/>
-                            <constraint firstItem="QJH-u7-sq1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VSU-B0-MUq"/>
+                            <constraint firstItem="QJH-u7-sq1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="VSU-B0-MUq"/>
                             <constraint firstItem="XgL-G0-vlY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WiA-Eh-U2c"/>
                             <constraint firstItem="QJH-u7-sq1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xws-qH-MNN"/>
                             <constraint firstItem="QJH-u7-sq1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cdX-dX-yCJ"/>
@@ -87,16 +87,16 @@
             </objects>
             <point key="canvasLocation" x="-136" y="135"/>
         </scene>
-        <!--View Controller-->
+        <!--League View Controller-->
         <scene sceneID="K5K-wn-jEA">
             <objects>
-                <viewController id="sGx-cX-57s" sceneMemberID="viewController">
+                <viewController id="sGx-cX-57s" customClass="LeagueViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EXc-Vl-WDS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="wsB-H7-L8E">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="40" width="414" height="696"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="G7s-Lb-8e1">
                                 <rect key="frame" x="0.0" y="40.000000000000007" width="414" height="110.66666666666669"/>
@@ -167,7 +167,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Gqb-Ef-nVc" kind="show" id="kqy-bj-RNp"/>
+                                    <action selector="onNextTapped:" destination="sGx-cX-57s" eventType="touchUpInside" id="ogb-Gw-HxR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LZ-gf-83y">
@@ -184,7 +184,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="wsB-H7-L8E" firstAttribute="top" secondItem="bYO-7h-Kka" secondAttribute="top" id="2dX-OF-pK9"/>
+                            <constraint firstItem="wsB-H7-L8E" firstAttribute="top" secondItem="bYO-7h-Kka" secondAttribute="top" constant="20" id="2dX-OF-pK9"/>
                             <constraint firstItem="bYO-7h-Kka" firstAttribute="trailing" secondItem="G7s-Lb-8e1" secondAttribute="trailing" id="8vD-uS-8dj"/>
                             <constraint firstItem="bYO-7h-Kka" firstAttribute="bottom" secondItem="wsB-H7-L8E" secondAttribute="bottom" id="C7h-Dw-VfG"/>
                             <constraint firstItem="2LZ-gf-83y" firstAttribute="leading" secondItem="bYO-7h-Kka" secondAttribute="leading" constant="10" id="JLt-3a-t17"/>
@@ -202,22 +202,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bYO-7h-Kka"/>
                     </view>
+                    <connections>
+                        <segue destination="Gqb-Ef-nVc" kind="show" identifier="skillVCSegue" id="vv5-oJ-LmK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjW-G5-eZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="jLv-nK-uBq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="773.91304347826087" y="134.5108695652174"/>
         </scene>
-        <!--View Controller-->
+        <!--Skill View Controller-->
         <scene sceneID="Vha-fL-YXo">
             <objects>
-                <viewController id="Gqb-Ef-nVc" sceneMemberID="viewController">
+                <viewController id="Gqb-Ef-nVc" customClass="SkillViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lA1-yE-MMs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="a6F-1o-AhW">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="40" width="414" height="696"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="TGK-Ly-Kao">
                                 <rect key="frame" x="0.0" y="40" width="414" height="110"/>
@@ -294,7 +297,7 @@
                             <constraint firstItem="hFs-TN-q4M" firstAttribute="trailing" secondItem="yTc-dZ-64r" secondAttribute="trailing" constant="40" id="dmY-w8-cGA"/>
                             <constraint firstItem="yTc-dZ-64r" firstAttribute="top" secondItem="TGK-Ly-Kao" secondAttribute="bottom" constant="50" id="gaE-eq-zQj"/>
                             <constraint firstItem="hFs-TN-q4M" firstAttribute="bottom" secondItem="YGa-v0-jdr" secondAttribute="bottom" constant="20" id="lWi-3B-MnF"/>
-                            <constraint firstItem="a6F-1o-AhW" firstAttribute="top" secondItem="hFs-TN-q4M" secondAttribute="top" id="qwQ-Zd-f6Q"/>
+                            <constraint firstItem="a6F-1o-AhW" firstAttribute="top" secondItem="hFs-TN-q4M" secondAttribute="top" constant="20" id="qwQ-Zd-f6Q"/>
                             <constraint firstItem="hFs-TN-q4M" firstAttribute="trailing" secondItem="TGK-Ly-Kao" secondAttribute="trailing" id="sMF-sE-eWQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hFs-TN-q4M"/>
